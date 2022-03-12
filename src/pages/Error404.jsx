@@ -2,8 +2,12 @@ import React from "react";
 
 const Error404 = () => {
   return (
-    <div>
-      <h1>Not found :c</h1>
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          <h1 className="text-center text-white">Not found ☹</h1>
+        </div>
+      </div>
     </div>
   );
 };
