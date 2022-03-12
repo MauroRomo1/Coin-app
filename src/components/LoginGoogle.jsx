@@ -6,7 +6,6 @@ const LoginGoogle = () => {
   let navigate = useNavigate();
 
   const responseGoogle = (response) => {
-    console.log(response);
     if (response?.error) {
       console.warn("error en el logeo");
     } else {
