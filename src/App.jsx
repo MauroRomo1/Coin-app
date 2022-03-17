@@ -6,9 +6,12 @@ import Home from "./pages/Home";
 
 import LoginScreen from "./pages/LoginScreen";
 
+import CoinScreen from "./pages/CoinScreen";
+
 import ProtectedRoutes from "./routes/ProtectedRoutes";
 
 import "./css/styles.css";
+import "font-awesome/css/font-awesome.css";
 
 const App = () => {
   return (
@@ -19,6 +22,14 @@ const App = () => {
           element={
             <ProtectedRoutes>
               <Home />
+            </ProtectedRoutes>
+          }
+        />
+        <Route
+          path="coin/:coinId"
+          element={
+            <ProtectedRoutes>
+              <CoinScreen />
             </ProtectedRoutes>
           }
         />

@@ -52,3 +52,19 @@ body {
 .card-login img {
   width: 100px;
 }
+
+.logo-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-icon img {
+  width: 150px;
+  height: 150px;
+}
+
+.img_avatar {
+  width: 40px;
+  border-radius: 100%;
+}

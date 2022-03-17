@@ -8,8 +8,4 @@ Luego de haber clonado el repositorio abra la consola de su preferencia y ejecut
 
 #### `npm install`: Sirve para descargar todas las depencias que este proyecto consume para funcionar. Este proceso puede demorar dependiendo de su internet y la potencia de procesado que tenga su maquina.
 
-#### `npm start`: Sirve para ejecutar la web y poder visulizarla en su navegador 
-
-
-
-
+#### `npm start`: Sirve para ejecutar la web y poder visulizarla en su navegador
