@@ -3,6 +3,7 @@ import React from "react";
 import numeral from "numeral";
 
 import CoinIcon from "./CoinIcon";
+import { Link, link } from "react-router-dom";
 
 const TableContent = ({ setUpdate, coins, update }) => {
   return (
@@ -30,7 +31,9 @@ const TableContent = ({ setUpdate, coins, update }) => {
             <td className="text-center">{coin.rank}</td>
             <td className="d-flex justify-content-between">
               <CoinIcon symbol={coin.symbol} />
-              {coin.name}
+              <Link className="nav-link" to={`/coin/${coin.id}`}>
+                {coin.name}
+              </Link>
             </td>
             <td>{numeral(coin.priceUsd).format("$0,0.00")}</td>
             <td>{numeral(coin.marketCapUsd).format("($ 0.00 a)")}</td>
