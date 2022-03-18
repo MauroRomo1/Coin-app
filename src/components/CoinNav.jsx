@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../img/coincap.png";
 
-import { Link, link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CoinSearch from "./CoinSearch";
 
 const CoinNav = () => {

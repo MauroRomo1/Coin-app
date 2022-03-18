@@ -3,7 +3,7 @@ import React from "react";
 import numeral from "numeral";
 
 import CoinIcon from "./CoinIcon";
-import { Link, link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const TableContent = ({ setUpdate, coins, update }) => {
   return (
@@ -17,7 +17,6 @@ const TableContent = ({ setUpdate, coins, update }) => {
           <th>VWAP(24hs)</th>
           <th>Supply</th>
           <th>Volume (24hs)</th>
-          <th>Change(24hs)</th>
           <th>
             <button className=" btn-coin" onClick={() => setUpdate(!update)}>
               Update
@@ -45,7 +44,7 @@ const TableContent = ({ setUpdate, coins, update }) => {
                 coin.changePercent24Hr > 0 ? "text-success" : "text-danger"
               }
             >
-              {parseFloat(coin.changePercent24Hr).toFixed(2)}%
+              <strong>{parseFloat(coin.changePercent24Hr).toFixed(2)}</strong>%
             </td>
           </tr>
         ))}
