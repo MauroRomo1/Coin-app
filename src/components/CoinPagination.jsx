@@ -1,5 +1,4 @@
 import React from "react";
-import { Pagination } from "react-bootstrap";
 
 const CoinPagination = ({ pagina, setPagina }) => {
   const paginacion = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -20,8 +19,8 @@ const CoinPagination = ({ pagina, setPagina }) => {
     <nav>
       <ul className="pagination justify-content-center">
         <li className={pagina < 10 ? "page-item disable" : "page-item"}>
-          <button className="page-link" onClick={prevPage}>
-            Previous
+          <button className="page-link mx-2" onClick={prevPage}>
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
           </button>
         </li>
         {paginacion.map((pag, index) => (
@@ -36,8 +35,8 @@ const CoinPagination = ({ pagina, setPagina }) => {
         ))}
 
         <li className={pagina === 90 ? "page-item disable" : "page-item"}>
-          <button className="page-link" onClick={nextPage}>
-            Next
+          <button className="page-link mx-2" onClick={nextPage}>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
           </button>
         </li>
       </ul>

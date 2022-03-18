@@ -11,10 +11,9 @@ const CoinSearch = () => {
   const [options, setOptions] = useState([]);
 
   useEffect(() => {
-    // let termino = inputValue.trim()
-    if (inputValue) {
-      searchCoinByName(inputValue).then((response) => {
-        // console.log(response);
+    let termino = inputValue.trim();
+    if (termino) {
+      searchCoinByName(termino).then((response) => {
         setOptions(response);
       });
     }
