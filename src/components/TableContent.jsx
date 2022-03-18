@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const TableContent = ({ setUpdate, coins, update }) => {
   return (
-    <table className="table table-coin">
+    <table className="table table-coin text-center">
       <thead>
         <tr>
           <th>#Rank</th>
